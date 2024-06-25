@@ -1,0 +1,23 @@
+javascript:(function() {   var searchTerm = prompt("Enter username to search:");   
+if (searchTerm) {     var encodedSearchTerm = encodeURIComponent(searchTerm);  
+
+    var searchUrl = "https://www.facebook.com/search/top/?q=" + encodedSearchTerm;     
+    window.open(searchUrl, "_blank");   
+    
+    var searchUrl2 = "https://twitter.com/search?q=" + encodedSearchTerm;  
+    window.open(searchUrl2, "_blank");
+
+    var searchUrl3 = "https://www.linkedin.com/search/results/all/?keywords=" + encodedSearchTerm;     
+    window.open(searchUrl3, "_blank");
+
+    var searchUrl4 = "https://www.youtube.com/results?search_query=" + encodedSearchTerm;     
+    window.open(searchUrl4, "_blank");
+
+    wmn = ("https://whatsmyname.app/?q=") + encodedSearchTerm;
+    
+    
+    function Wmn() { window.open(wmn); }  
+    
+    Wmn()
+
+} })();
